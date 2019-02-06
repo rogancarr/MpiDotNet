@@ -24,13 +24,13 @@ The C++ wrapper is necessary for two main reasons:
   ```c++
   MPI_Allreduce(const void *sendbuf, void *recvbuf, int count, MPI_Datatype datatype, MPI_Op op, MPI_Comm comm)
   ```
-  Typing an input as `void*` from .NET seems like a no-go.
+  Typing an input as `void*` from .NET seems like a no-go. Instead, we write explicit methods for each possible `Type` we want to pass over the wire.
   
-Once we have our C library, we can then wrap it in C# and then use it from .NET.
+Now, once we have our C library, we can then wrap it in C# and then use it from .NET. This example program does some simple counting with MPI and some machine learning: Each node builds a linear model over a resampling of the dataset and then uses `Allreduce` to ensemble the models. This is a simple example, but you can imagine all the amazing directions you can go from here.
   
 ## Requirements
 
-- An MPI library: Follow the install directions of your MPI flavor. This has been tested with OpenMPI on Ubuntu 16.04 and 18.04.
+- An MPI library: Follow the install directions of your MPI flavor. This has been tested with OpenMPI on Ubuntu 16.04 and 18.04. It has also been tested on Ubuntu 16.04 running in the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). (Did you know about that? It's awesome.)
 - The .NET Core SDK: [Installation and documentation link](https://dotnet.microsoft.com/download)
   
 ## Building
