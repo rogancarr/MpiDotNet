@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MpiDotNetApp", "MpiDotNetApp\MpiDotNetApp.csproj", "{DF4A0301-2BB0-4E57-8603-626A7AB74A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Debug|x64.ActiveCfg = Debug|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Debug|x64.Build.0 = Debug|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Debug|x86.ActiveCfg = Debug|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Debug|x86.Build.0 = Debug|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Release|x64.ActiveCfg = Release|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Release|x64.Build.0 = Release|x64
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Release|x86.ActiveCfg = Release|x86
+		{DF4A0301-2BB0-4E57-8603-626A7AB74A44}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5CAA71C-F6A7-47B4-85AA-29FC0A491064}
+	EndGlobalSection
+EndGlobal
