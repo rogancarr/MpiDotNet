@@ -4,12 +4,14 @@
 
 A friend of mine recently asked me it if was possible to write MPI programs in .NET on Linux. I wrote this project to show that it **is** possible and quite easy. In fact, you can expect great performance from .NET with MPI.
 
+This isn't a complete wrapping of MPI in .NET. Only a handful of functions have been wrapped so far. That said, it's enough to show that any function could be wrapped, and the rest of the API surface could most likely be scripted.
+
 While this repository is focused on MPI on Linux, it would be very easy to also get it to support Windows and Mac runtimes. You would simply need to build the C++ libraries on all three platforms, and reference them appropriately (perhaps with a runtime check) in .NET. See [this repository](https://github.com/rogancarr/DotNetCppExample) for an example of how to build cross-platform .NET code that relies on C++ libraries (this repository actually uses that repository as a base). In fact, I left the C++ project in a combined Makefile + VS state so that it would be easy to extend.
 
 ## Project Overview
 
 This project consists of two parts:
-1. A C++ library that wraps `mpi.h`
+1. A C++ library that wraps functions from `mpi.h`
 2. A C# library that uses the C++ wrapper to call MPI methods.
 
 Let's look at these:
