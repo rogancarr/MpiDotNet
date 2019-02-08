@@ -32,7 +32,7 @@ The C# library is both a wrapper for the C++ library, and a demo program showing
   
 ## Requirements
 
-- An MPI library: Follow the install directions of your MPI flavor. This project has been tested with OpenMPI on Ubuntu 16.04 and 18.04. It has also been tested on Ubuntu 16.04 running in the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). (Did you know about that? It's awesome.)
+- An MPI library: Follow the install directions of your MPI flavor. This project has been tested with OpenMPI on stand-alone Ubuntu 16.04 and 18.04 VMs, and on an Ubuntu16.04 Azure Batch AI cluster. It has also been tested on Ubuntu 16.04 running in the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10). (Did you know about that? It's awesome.)
 - The .NET Core SDK: [Installation and documentation link](https://dotnet.microsoft.com/download)
 - A c++ compiler, like gcc.
 - dos2unix: The code has been written in Windows and in Linux, so the line-endings aren't necessarily unix-style. Before compiling the C++ code, we'll need to run dos2unix just in case.
